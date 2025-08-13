@@ -1,0 +1,158 @@
+<!DOCTYPE html><html lang='fr'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+    :root{--bg:#ffffff;--grid:#d5d5d5;--odd:#fafafa;--muted:#555;--pro:#eaf7ef;--risk:#fdeeee;}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:28px;background:var(--bg);color:#111;}
+    h1{font-size:22px;margin:0 0 16px;font-weight:800;}
+    h2{font-size:18px;margin:22px 0 10px;}
+    .muted{color:var(--muted);font-weight:400;font-size:14px;margin-left:6px}
+    .controls{display:flex;gap:12px;align-items:center;margin-bottom:12px;flex-wrap:wrap}
+    input[type=text]{padding:8px 12px;border:0.5px solid #bfbfbf;border-radius:10px;min-width:320px}
+    label.pill{background:#f7f7f7;border-radius:10px;padding:6px 10px;border:0.5px solid #bfbfbf;display:flex;gap:8px;align-items:center}
+    table{border-collapse:collapse;width:100%;border:0.5px solid var(--grid);}
+    th,td{border:0.5px solid var(--grid);padding:10px 8px;vertical-align:top}
+    thead th{background:#f3f3f3;cursor:pointer;user-select:none;font-weight:700}
+    thead th.left, td.left{text-align:left}
+    thead th.right, td.right{text-align:right; font-variant-numeric: tabular-nums; font-feature-settings: 'tnum' 1, 'lnum' 1; white-space:nowrap;}
+    /* New alignment: RR à droite, OR à gauche */
+    thead th.rr, td.rr{text-align:right; font-variant-numeric: tabular-nums; font-feature-settings: 'tnum' 1, 'lnum' 1; white-space:nowrap;}
+    thead th.or, td.or{text-align:left; font-variant-numeric: tabular-nums; font-feature-settings: 'tnum' 1, 'lnum' 1; white-space:nowrap;}
+    tbody tr:nth-child(odd){background:var(--odd)}
+    tbody tr.pro td{background:var(--pro)}
+    tbody tr.risk td{background:var(--risk)}
+    td.p, th.p{ text-align:right; font-variant-numeric: tabular-nums; font-feature-settings: 'tnum' 1, 'lnum' 1; white-space:nowrap;}
+    col.factor{ width:42%}
+    col.riskexp{ width:14%}
+    col.risknon{ width:14%}
+    col.rr{ width:10%}
+    col.or{ width:14%}
+    col.p{ width:6%}
+    .note{margin-top:10px;color:var(--muted);font-size:13px}
+    </style>
+    <title>ETAPE 3 — Analyse univariée (Formes simples AS/AN, n=48) - Variables retenus</title></head><body>
+<h1>ETAPE 3 — Analyse univariée (Formes simples AS/AN, n=48) - Variables retenus</h1><div class='controls'>
+<input id='q' type='text' placeholder="Filtrer… (ex: '7. Décortication')" oninput='filterTables()'>
+<label class='pill'><input id='tog-pro' type='checkbox' onchange='applyToggles()'> Facteurs protecteurs</label>
+<label class='pill'><input id='tog-risk' type='checkbox' onchange='applyToggles()'> Facteurs de risques</label>
+</div>
+<h2>Défaut de reexpansion <span class='muted'>(variables retenues n = 1)</span></h2>
+<table id='t0' data-asc='1'>
+<colgroup><col class='factor'><col class='riskexp'><col class='risknon'><col class='rr'><col class='or'><col class='p'></colgroup>
+<thead><tr>
+<th class='left' onclick='sortTable("t0",0)'>Facteur</th>
+<th class='right' onclick='sortTable("t0",1)'>Risque exposé</th>
+<th class='right' onclick='sortTable("t0",2)'>Risque non exposé</th>
+<th class='rr' onclick='sortTable("t0",3)'>RR</th>
+<th class='or' onclick='sortTable("t0",4)'>OR (IC 95%)</th>
+<th class='p' onclick='sortTable("t0",5)'>p-value</th>
+</tr></thead><tbody>
+<tr data-idx='0' data-status='risk'><td class='left'>7. Pleurectomie</td><td class='right'>100.0%</td><td class='right'>17.4%</td><td class='rr' data-sort='5.750000'>5.75</td><td class='or' data-sort='22.647059'>22.65 (0.99–515.94)</td><td class='p' data-sort='0.039894'>0.0399</td></tr>
+</tbody></table>
+<h2>Fuites aérienne ≥ 5J <span class='muted'>(variables retenues n = 1)</span></h2>
+<table id='t1' data-asc='1'>
+<colgroup><col class='factor'><col class='riskexp'><col class='risknon'><col class='rr'><col class='or'><col class='p'></colgroup>
+<thead><tr>
+<th class='left' onclick='sortTable("t1",0)'>Facteur</th>
+<th class='right' onclick='sortTable("t1",1)'>Risque exposé</th>
+<th class='right' onclick='sortTable("t1",2)'>Risque non exposé</th>
+<th class='rr' onclick='sortTable("t1",3)'>RR</th>
+<th class='or' onclick='sortTable("t1",4)'>OR (IC 95%)</th>
+<th class='p' onclick='sortTable("t1",5)'>p-value</th>
+</tr></thead><tbody>
+<tr data-idx='0' data-status='risk'><td class='left'>9. *Défaillance monoviscérale</td><td class='right'>66.7%</td><td class='right'>8.9%</td><td class='rr' data-sort='7.500000'>7.50</td><td class='or' data-sort='20.500000'>20.50 (1.51–279.02)</td><td class='p' data-sort='0.037581'>0.0376</td></tr>
+</tbody></table>
+<h2>Hémothorax <span class='muted'>(variables retenues n = 1)</span></h2>
+<table id='t2' data-asc='1'>
+<colgroup><col class='factor'><col class='riskexp'><col class='risknon'><col class='rr'><col class='or'><col class='p'></colgroup>
+<thead><tr>
+<th class='left' onclick='sortTable("t2",0)'>Facteur</th>
+<th class='right' onclick='sortTable("t2",1)'>Risque exposé</th>
+<th class='right' onclick='sortTable("t2",2)'>Risque non exposé</th>
+<th class='rr' onclick='sortTable("t2",3)'>RR</th>
+<th class='or' onclick='sortTable("t2",4)'>OR (IC 95%)</th>
+<th class='p' onclick='sortTable("t2",5)'>p-value</th>
+</tr></thead><tbody>
+<tr data-idx='0' data-status='risk'><td class='left'>3. VHB</td><td class='right'>60.0%</td><td class='right'>7.0%</td><td class='rr' data-sort='8.600000'>8.60</td><td class='or' data-sort='20.000000'>20.00 (2.35–169.92)</td><td class='p' data-sort='0.010428'>0.0104</td></tr>
+</tbody></table>
+<h2>Reprise chirurgicale <span class='muted'>(variables retenues n = 6)</span></h2>
+<table id='t3' data-asc='1'>
+<colgroup><col class='factor'><col class='riskexp'><col class='risknon'><col class='rr'><col class='or'><col class='p'></colgroup>
+<thead><tr>
+<th class='left' onclick='sortTable("t3",0)'>Facteur</th>
+<th class='right' onclick='sortTable("t3",1)'>Risque exposé</th>
+<th class='right' onclick='sortTable("t3",2)'>Risque non exposé</th>
+<th class='rr' onclick='sortTable("t3",3)'>RR</th>
+<th class='or' onclick='sortTable("t3",4)'>OR (IC 95%)</th>
+<th class='p' onclick='sortTable("t3",5)'>p-value</th>
+</tr></thead><tbody>
+<tr data-idx='0' data-status='risk'><td class='left'>5. Embolisation ≥ 2</td><td class='right'>42.9%</td><td class='right'>4.9%</td><td class='rr' data-sort='8.785714'>8.79</td><td class='or' data-sort='14.625000'>14.62 (1.86–115.21)</td><td class='p' data-sort='0.017611'>0.0176</td></tr>
+<tr data-idx='1' data-status='risk'><td class='left'>9. *Septique</td><td class='right'>36.4%</td><td class='right'>2.7%</td><td class='rr' data-sort='13.454545'>13.45</td><td class='or' data-sort='20.571429'>20.57 (1.99–212.73)</td><td class='p' data-sort='0.007401'>0.0074</td></tr>
+<tr data-idx='2' data-status='risk'><td class='left'>9. *Déglobulisation</td><td class='right'>42.9%</td><td class='right'>4.9%</td><td class='rr' data-sort='8.785714'>8.79</td><td class='or' data-sort='14.625000'>14.62 (1.86–115.21)</td><td class='p' data-sort='0.017611'>0.0176</td></tr>
+<tr data-idx='3' data-status='risk'><td class='left'>9. *Saignement thoracique intrapleural</td><td class='right'>50.0%</td><td class='right'>4.8%</td><td class='rr' data-sort='10.500000'>10.50</td><td class='or' data-sort='20.000000'>20.00 (2.35–169.92)</td><td class='p' data-sort='0.010428'>0.0104</td></tr>
+<tr data-idx='4' data-status='risk'><td class='left'>9. *Hémotpysie</td><td class='right'>66.7%</td><td class='right'>6.7%</td><td class='rr' data-sort='10.000000'>10.00</td><td class='or' data-sort='28.000000'>28.00 (1.94–404.74)</td><td class='p' data-sort='0.025439'>0.0254</td></tr>
+<tr data-idx='5' data-status='risk'><td class='left'>9. *Infection pulmonaire: Total</td><td class='right'>37.5%</td><td class='right'>5.0%</td><td class='rr' data-sort='7.500000'>7.50</td><td class='or' data-sort='11.400000'>11.40 (1.52–85.73)</td><td class='p' data-sort='0.027177'>0.0272</td></tr>
+</tbody></table>
+<h2>Hospitalisation ≥ 7J <span class='muted'>(variables retenues n = 8)</span></h2>
+<table id='t4' data-asc='1'>
+<colgroup><col class='factor'><col class='riskexp'><col class='risknon'><col class='rr'><col class='or'><col class='p'></colgroup>
+<thead><tr>
+<th class='left' onclick='sortTable("t4",0)'>Facteur</th>
+<th class='right' onclick='sortTable("t4",1)'>Risque exposé</th>
+<th class='right' onclick='sortTable("t4",2)'>Risque non exposé</th>
+<th class='rr' onclick='sortTable("t4",3)'>RR</th>
+<th class='or' onclick='sortTable("t4",4)'>OR (IC 95%)</th>
+<th class='p' onclick='sortTable("t4",5)'>p-value</th>
+</tr></thead><tbody>
+<tr data-idx='0' data-status='pro'><td class='left'>6. VEMS ≥ 80 %</td><td class='right'>34.8%</td><td class='right'>68.0%</td><td class='rr' data-sort='0.511509'>0.51</td><td class='or' data-sort='0.250980'>0.25 (0.08–0.83)</td><td class='p' data-sort='0.041858'>0.0419</td></tr>
+<tr data-idx='1' data-status='risk'><td class='left'>9. *Respiratoire</td><td class='right'>73.1%</td><td class='right'>27.3%</td><td class='rr' data-sort='2.679487'>2.68</td><td class='or' data-sort='7.238095'>7.24 (2.02–25.96)</td><td class='p' data-sort='0.003294'>0.0033</td></tr>
+<tr data-idx='2' data-status='risk'><td class='left'>9. *Pneumothorax</td><td class='right'>100.0%</td><td class='right'>45.2%</td><td class='rr' data-sort='2.210526'>2.21</td><td class='or' data-sort='15.666667'>15.67 (0.83–295.90)</td><td class='p' data-sort='0.022658'>0.0227</td></tr>
+<tr data-idx='3' data-status='risk'><td class='left'>9. *Fuite prolongé (>5J)</td><td class='right'>100.0%</td><td class='right'>45.2%</td><td class='rr' data-sort='2.210526'>2.21</td><td class='or' data-sort='15.666667'>15.67 (0.83–295.90)</td><td class='p' data-sort='0.022658'>0.0227</td></tr>
+<tr data-idx='4' data-status='risk'><td class='left'>9. *Septique</td><td class='right'>81.8%</td><td class='right'>43.2%</td><td class='rr' data-sort='1.892045'>1.89</td><td class='or' data-sort='5.906250'>5.91 (1.12–31.20)</td><td class='p' data-sort='0.038576'>0.0386</td></tr>
+<tr data-idx='5' data-status='risk'><td class='left'>7. Pneumonectomie</td><td class='right'>100.0%</td><td class='right'>51.1%</td><td class='rr' data-sort='1.958333'>1.96</td><td class='or' data-sort='2.877551'>2.88 (0.11–74.24)</td><td class='p' data-sort='1.000000'>1.0000</td></tr>
+<tr data-idx='6' data-status='risk'><td class='left'>7. Resection de côtes</td><td class='right'>100.0%</td><td class='right'>51.1%</td><td class='rr' data-sort='1.958333'>1.96</td><td class='or' data-sort='2.877551'>2.88 (0.11–74.24)</td><td class='p' data-sort='1.000000'>1.0000</td></tr>
+<tr data-idx='7' data-status='risk'><td class='left'>9. *Epanchement péricardiqe</td><td class='right'>100.0%</td><td class='right'>51.1%</td><td class='rr' data-sort='1.958333'>1.96</td><td class='or' data-sort='2.877551'>2.88 (0.11–74.24)</td><td class='p' data-sort='1.000000'>1.0000</td></tr>
+</tbody></table>
+<div class='note'>Trier en cliquant OR / RR / p-value, filtre en haut à gauche, couleurs activables via cases. RR aligné à droite, OR à gauche.</div>
+
+    <script>
+    function sortTable(tid, col) {
+      const table = document.getElementById(tid);
+      const tbody = table.tBodies[0];
+      const rows = Array.from(tbody.querySelectorAll('tr'));
+      if(col === 0){
+        rows.sort((a,b)=> parseInt(a.dataset.idx)-parseInt(b.dataset.idx));
+        rows.forEach(r => tbody.appendChild(r));
+        table.setAttribute('data-asc','1');
+        return;
+      }
+      const asc = table.getAttribute('data-asc') === '1' ? false : true;
+      rows.sort((r1, r2) => {
+        const t1 = r1.children[col].dataset.sort ?? r1.children[col].innerText;
+        const t2 = r2.children[col].dataset.sort ?? r2.children[col].innerText;
+        const v1 = parseFloat((t1||'').replace(',', '.')); const v2 = parseFloat((t2||'').replace(',', '.'));
+        if (!isNaN(v1) && !isNaN(v2)) { return asc ? v1 - v2 : v2 - v1; }
+        return asc ? (t1>t2?1:-1) : (t1<t2?1:-1);
+      });
+      rows.forEach(r => tbody.appendChild(r));
+      table.setAttribute('data-asc', asc ? '1':'0');
+    }
+    function filterTables() {
+      const q = document.getElementById('q').value.toLowerCase();
+      document.querySelectorAll('tbody tr').forEach(tr => {
+          const txt = tr.innerText.toLowerCase();
+          tr.style.display = txt.includes(q) ? '' : 'none';
+      });
+    }
+    function applyToggles(){
+      const showPro = document.getElementById('tog-pro').checked;
+      const showRisk = document.getElementById('tog-risk').checked;
+      document.querySelectorAll('tbody tr').forEach(tr => {
+        const st = tr.dataset.status;
+        tr.classList.remove('pro','risk');
+        if (showPro && st==='pro') tr.classList.add('pro');
+        if (showRisk && st==='risk') tr.classList.add('risk');
+      });
+    }
+    </script>
+    
+<script>document.addEventListener('DOMContentLoaded', ()=>applyToggles());</script>
+</body></html>
