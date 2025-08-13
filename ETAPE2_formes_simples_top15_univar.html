@@ -1,0 +1,255 @@
+<!DOCTYPE html><html lang='fr'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+    :root{--bg:#fff;--grid:#eaeaea;--odd:#fafafa;--muted:#666;}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:24px;background:var(--bg)}
+    h1{font-size:22px;margin:0 0 12px;font-weight:800;}
+    h2{font-size:18px;margin:24px 0 8px;}
+    .muted{color:var(--muted);font-weight:400;font-size:14px;margin-left:6px}
+    .controls{display:flex;gap:10px;align-items:center;margin-bottom:12px}
+    input[type=text]{padding:8px 12px;border:1px solid #ccc;border-radius:8px;min-width:340px}
+    label.pill{border:1px solid #ccc;border-radius:8px;padding:6px 8px;display:flex;gap:8px;align-items:center}
+    table{border-collapse:collapse;width:100%;table-layout:fixed;}
+    th,td{border:1px solid var(--grid);padding:8px 8px;vertical-align:top}
+    thead th{background:#f5f5f5;cursor:pointer;user-select:none;text-align:left}
+    tbody tr:nth-child(odd){background:var(--odd)}
+    tbody tr.sig td{background:#fff7c2}
+    td.num, th.num{font-variant-numeric: tabular-nums; text-align:right}
+    .note{margin-top:8px;color:var(--muted);font-size:13px}
+    </style>
+    <title>ETAPE 2 — Analyse univariée (Formes simples AS/AN, n=48) — Top 15 par événement</title></head><body><h1>ETAPE 2 — Analyse univariée (Formes simples AS/AN, n=48) — Top 15 par événement</h1><div class='controls'><input id='q' type='text' placeholder="Filtrer... (ex: '7. Lobectomie', '10. **')" oninput='filterTables()'><label class='pill'><input id='sig' type='checkbox' onchange='toggleSig("sig")'> Afficher seulement p < 0,05</label></div>
+<h2>Défaut de réexpansion <span class='muted'>(n = 3 significatifs)</span></h2>
+<table id='t0' data-asc='1'>
+<colgroup><col style='width:40%'><col style='width:12%'><col style='width:12%'><col style='width:10%'><col style='width:18%'><col style='width:8%'></colgroup>
+<thead><tr>
+<th onclick='sortTable("t0",0)'>Facteur</th>
+<th class='num' onclick='sortTable("t0",1)'>Risque exposé</th>
+<th class='num' onclick='sortTable("t0",2)'>Risque non exposé</th>
+<th class='num' onclick='sortTable("t0",3)'>RR</th>
+<th onclick='sortTable("t0",4)'>OR (IC 95%)</th>
+<th class='num' onclick='sortTable("t0",5)'>p-value</th>
+</tr></thead><tbody>
+<tr><td>9. *Respiratoire</td><td class='num' data-sort='38.5'>38.5%</td><td class='num' data-sort='0.0'>0.0%</td><td class='num' data-sort=''>-</td><td>28.64 (1.56–524.28)</td><td class='num' data-col='p' data-sort='0.000911'>0.0009</td></tr>
+<tr><td>9. *Pneumothorax</td><td class='num' data-sort='66.7'>66.7%</td><td class='num' data-sort='14.3'>14.3%</td><td class='num' data-sort='4.67'>4.67</td><td>12.00 (1.79–80.61)</td><td class='num' data-col='p' data-sort='0.012828'>0.0128</td></tr>
+<tr><td>7. Pleurectomie</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='17.4'>17.4%</td><td class='num' data-sort='5.75'>5.75</td><td>22.65 (0.99–515.94)</td><td class='num' data-col='p' data-sort='0.039894'>0.0399</td></tr>
+<tr><td>6. VEMS < 80 %</td><td class='num' data-sort='37.5'>37.5%</td><td class='num' data-sort='12.5'>12.5%</td><td class='num' data-sort='3.00'>3.00</td><td>4.20 (0.98–18.03)</td><td class='num' data-col='p' data-sort='0.063599'>0.0636</td></tr>
+<tr><td>3. Allergie</td><td class='num' data-sort='0.0'>0.0%</td><td class='num' data-sort='26.3'>26.3%</td><td class='num' data-sort='0.00'>0.00</td><td>0.13 (0.01–2.41)</td><td class='num' data-col='p' data-sort='0.094144'>0.0941</td></tr>
+<tr><td>1. IMC < 18.5</td><td class='num' data-sort='50.0'>50.0%</td><td class='num' data-sort='16.7'>16.7%</td><td class='num' data-sort='3.00'>3.00</td><td>5.00 (0.83–30.08)</td><td class='num' data-col='p' data-sort='0.095321'>0.0953</td></tr>
+<tr><td>9. *Emphysème sous cutané</td><td class='num' data-sort='66.7'>66.7%</td><td class='num' data-sort='17.8'>17.8%</td><td class='num' data-sort='3.75'>3.75</td><td>9.25 (0.74–114.87)</td><td class='num' data-col='p' data-sort='0.105805'>0.1058</td></tr>
+<tr><td>2. AN</td><td class='num' data-sort='6.2'>6.2%</td><td class='num' data-sort='28.1'>28.1%</td><td class='num' data-sort='0.22'>0.22</td><td>0.17 (0.02–1.49)</td><td class='num' data-col='p' data-sort='0.132212'>0.1322</td></tr>
+<tr><td>2. AS</td><td class='num' data-sort='28.1'>28.1%</td><td class='num' data-sort='6.2'>6.2%</td><td class='num' data-sort='4.50'>4.50</td><td>5.87 (0.67–51.20)</td><td class='num' data-col='p' data-sort='0.132212'>0.1322</td></tr>
+<tr><td>3. Alcool</td><td class='num' data-sort='6.2'>6.2%</td><td class='num' data-sort='28.1'>28.1%</td><td class='num' data-sort='0.22'>0.22</td><td>0.17 (0.02–1.49)</td><td class='num' data-col='p' data-sort='0.132212'>0.1322</td></tr>
+<tr><td>7. Wedge</td><td class='num' data-sort='42.9'>42.9%</td><td class='num' data-sort='17.1'>17.1%</td><td class='num' data-sort='2.51'>2.51</td><td>3.64 (0.66–20.02)</td><td class='num' data-col='p' data-sort='0.146880'>0.1469</td></tr>
+<tr><td>6. VO2max% < 75 %</td><td class='num' data-sort='50.0'>50.0%</td><td class='num' data-sort='18.2'>18.2%</td><td class='num' data-sort='2.75'>2.75</td><td>4.50 (0.55–36.91)</td><td class='num' data-col='p' data-sort='0.187095'>0.1871</td></tr>
+<tr><td>3. Pneumothorax</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='19.1'>19.1%</td><td class='num' data-sort='5.22'>5.22</td><td>12.16 (0.46–322.61)</td><td class='num' data-col='p' data-sort='0.208333'>0.2083</td></tr>
+<tr><td>3. VHC</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='19.1'>19.1%</td><td class='num' data-sort='5.22'>5.22</td><td>12.16 (0.46–322.61)</td><td class='num' data-col='p' data-sort='0.208333'>0.2083</td></tr>
+<tr><td>4. Mycobacterie atypique préop.</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='19.1'>19.1%</td><td class='num' data-sort='5.22'>5.22</td><td>12.16 (0.46–322.61)</td><td class='num' data-col='p' data-sort='0.208333'>0.2083</td></tr>
+</tbody></table>
+<h2>Fuites aérienne ≥ 5J <span class='muted'>(n = 3 significatifs)</span></h2>
+<table id='t1' data-asc='1'>
+<colgroup><col style='width:40%'><col style='width:12%'><col style='width:12%'><col style='width:10%'><col style='width:18%'><col style='width:8%'></colgroup>
+<thead><tr>
+<th onclick='sortTable("t1",0)'>Facteur</th>
+<th class='num' onclick='sortTable("t1",1)'>Risque exposé</th>
+<th class='num' onclick='sortTable("t1",2)'>Risque non exposé</th>
+<th class='num' onclick='sortTable("t1",3)'>RR</th>
+<th onclick='sortTable("t1",4)'>OR (IC 95%)</th>
+<th class='num' onclick='sortTable("t1",5)'>p-value</th>
+</tr></thead><tbody>
+<tr><td>9. *Pneumothorax</td><td class='num' data-sort='50.0'>50.0%</td><td class='num' data-sort='7.1'>7.1%</td><td class='num' data-sort='7.00'>7.00</td><td>13.00 (1.79–94.62)</td><td class='num' data-col='p' data-sort='0.019783'>0.0198</td></tr>
+<tr><td>9. *Respiratoire</td><td class='num' data-sort='23.1'>23.1%</td><td class='num' data-sort='0.0'>0.0%</td><td class='num' data-sort=''>-</td><td>14.27 (0.76–269.38)</td><td class='num' data-col='p' data-sort='0.024842'>0.0248</td></tr>
+<tr><td>9. *Défaillance monoviscérale</td><td class='num' data-sort='66.7'>66.7%</td><td class='num' data-sort='8.9'>8.9%</td><td class='num' data-sort='7.50'>7.50</td><td>20.50 (1.51–279.02)</td><td class='num' data-col='p' data-sort='0.037581'>0.0376</td></tr>
+<tr><td>5. Hémoptysie</td><td class='num' data-sort='20.0'>20.0%</td><td class='num' data-sort='0.0'>0.0%</td><td class='num' data-sort=''>-</td><td>9.82 (0.52–185.53)</td><td class='num' data-col='p' data-sort='0.070845'>0.0708</td></tr>
+<tr><td>1. Sexe (H)</td><td class='num' data-sort='19.4'>19.4%</td><td class='num' data-sort='0.0'>0.0%</td><td class='num' data-sort=''>-</td><td>8.92 (0.47–168.78)</td><td class='num' data-col='p' data-sort='0.076640'>0.0766</td></tr>
+<tr><td>6. VEMS < 80 %</td><td class='num' data-sort='25.0'>25.0%</td><td class='num' data-sort='6.2'>6.2%</td><td class='num' data-sort='4.00'>4.00</td><td>5.00 (0.81–31.00)</td><td class='num' data-col='p' data-sort='0.085605'>0.0856</td></tr>
+<tr><td>9. *Septique</td><td class='num' data-sort='27.3'>27.3%</td><td class='num' data-sort='8.1'>8.1%</td><td class='num' data-sort='3.36'>3.36</td><td>4.25 (0.72–25.10)</td><td class='num' data-col='p' data-sort='0.123814'>0.1238</td></tr>
+<tr><td>3. Insuffisance d’organe</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='10.6'>10.6%</td><td class='num' data-sort='9.40'>9.40</td><td>23.18 (0.84–642.25)</td><td class='num' data-col='p' data-sort='0.125000'>0.1250</td></tr>
+<tr><td>3. VHC</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='10.6'>10.6%</td><td class='num' data-sort='9.40'>9.40</td><td>23.18 (0.84–642.25)</td><td class='num' data-col='p' data-sort='0.125000'>0.1250</td></tr>
+<tr><td>7. Lambeau musculaire</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='10.6'>10.6%</td><td class='num' data-sort='9.40'>9.40</td><td>23.18 (0.84–642.25)</td><td class='num' data-col='p' data-sort='0.125000'>0.1250</td></tr>
+<tr><td>9. *Choc septique</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='10.6'>10.6%</td><td class='num' data-sort='9.40'>9.40</td><td>23.18 (0.84–642.25)</td><td class='num' data-col='p' data-sort='0.125000'>0.1250</td></tr>
+<tr><td>9. *Infection bronchique: Total</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='10.6'>10.6%</td><td class='num' data-sort='9.40'>9.40</td><td>23.18 (0.84–642.25)</td><td class='num' data-col='p' data-sort='0.125000'>0.1250</td></tr>
+<tr><td>9. *Infection bronchique: Infection (Bronchite)</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='10.6'>10.6%</td><td class='num' data-sort='9.40'>9.40</td><td>23.18 (0.84–642.25)</td><td class='num' data-col='p' data-sort='0.125000'>0.1250</td></tr>
+<tr><td>9. *Infection pleural: Contamination</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='10.6'>10.6%</td><td class='num' data-sort='9.40'>9.40</td><td>23.18 (0.84–642.25)</td><td class='num' data-col='p' data-sort='0.125000'>0.1250</td></tr>
+<tr><td>9. *Biologique</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='10.6'>10.6%</td><td class='num' data-sort='9.40'>9.40</td><td>23.18 (0.84–642.25)</td><td class='num' data-col='p' data-sort='0.125000'>0.1250</td></tr>
+</tbody></table>
+<h2>Hémothorax <span class='muted'>(n = 5 significatifs)</span></h2>
+<table id='t2' data-asc='1'>
+<colgroup><col style='width:40%'><col style='width:12%'><col style='width:12%'><col style='width:10%'><col style='width:18%'><col style='width:8%'></colgroup>
+<thead><tr>
+<th onclick='sortTable("t2",0)'>Facteur</th>
+<th class='num' onclick='sortTable("t2",1)'>Risque exposé</th>
+<th class='num' onclick='sortTable("t2",2)'>Risque non exposé</th>
+<th class='num' onclick='sortTable("t2",3)'>RR</th>
+<th onclick='sortTable("t2",4)'>OR (IC 95%)</th>
+<th class='num' onclick='sortTable("t2",5)'>p-value</th>
+</tr></thead><tbody>
+<tr><td>9. *Déglobulisation</td><td class='num' data-sort='85.7'>85.7%</td><td class='num' data-sort='0.0'>0.0%</td><td class='num' data-sort=''>-</td><td>359.67 (13.19–9807.55)</td><td class='num' data-col='p' data-sort='0.000001'>0.0000</td></tr>
+<tr><td>3. VHB</td><td class='num' data-sort='60.0'>60.0%</td><td class='num' data-sort='7.0'>7.0%</td><td class='num' data-sort='8.60'>8.60</td><td>20.00 (2.35–169.92)</td><td class='num' data-col='p' data-sort='0.010428'>0.0104</td></tr>
+<tr><td>10. **Total reprise</td><td class='num' data-sort='60.0'>60.0%</td><td class='num' data-sort='7.0'>7.0%</td><td class='num' data-sort='8.60'>8.60</td><td>20.00 (2.35–169.92)</td><td class='num' data-col='p' data-sort='0.010428'>0.0104</td></tr>
+<tr><td>10. **Hémothorax</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='8.7'>8.7%</td><td class='num' data-sort='11.50'>11.50</td><td>47.22 (1.95–1144.77)</td><td class='num' data-col='p' data-sort='0.013298'>0.0133</td></tr>
+<tr><td>9. *Pneumothorax</td><td class='num' data-sort='50.0'>50.0%</td><td class='num' data-sort='7.1'>7.1%</td><td class='num' data-sort='7.00'>7.00</td><td>13.00 (1.79–94.62)</td><td class='num' data-col='p' data-sort='0.019783'>0.0198</td></tr>
+<tr><td>3. Tabac</td><td class='num' data-sort='4.0'>4.0%</td><td class='num' data-sort='21.7'>21.7%</td><td class='num' data-sort='0.18'>0.18</td><td>0.15 (0.02–1.40)</td><td class='num' data-col='p' data-sort='0.091209'>0.0912</td></tr>
+<tr><td>3. VIH</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='10.6'>10.6%</td><td class='num' data-sort='9.40'>9.40</td><td>23.18 (0.84–642.25)</td><td class='num' data-col='p' data-sort='0.125000'>0.1250</td></tr>
+<tr><td>3. VHC</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='10.6'>10.6%</td><td class='num' data-sort='9.40'>9.40</td><td>23.18 (0.84–642.25)</td><td class='num' data-col='p' data-sort='0.125000'>0.1250</td></tr>
+<tr><td>7. Pneumonectomie</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='10.6'>10.6%</td><td class='num' data-sort='9.40'>9.40</td><td>23.18 (0.84–642.25)</td><td class='num' data-col='p' data-sort='0.125000'>0.1250</td></tr>
+<tr><td>7. Resection de côtes</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='10.6'>10.6%</td><td class='num' data-sort='9.40'>9.40</td><td>23.18 (0.84–642.25)</td><td class='num' data-col='p' data-sort='0.125000'>0.1250</td></tr>
+<tr><td>9. *Epanchement péricardiqe</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='10.6'>10.6%</td><td class='num' data-sort='9.40'>9.40</td><td>23.18 (0.84–642.25)</td><td class='num' data-col='p' data-sort='0.125000'>0.1250</td></tr>
+<tr><td>10. **Tamponnade</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='10.6'>10.6%</td><td class='num' data-sort='9.40'>9.40</td><td>23.18 (0.84–642.25)</td><td class='num' data-col='p' data-sort='0.125000'>0.1250</td></tr>
+<tr><td>9. *Fuite prolongé (>5J)</td><td class='num' data-sort='33.3'>33.3%</td><td class='num' data-sort='9.5'>9.5%</td><td class='num' data-sort='3.50'>3.50</td><td>4.75 (0.65–34.60)</td><td class='num' data-col='p' data-sort='0.156600'>0.1566</td></tr>
+<tr><td>8. Pertes sanguines < 500 mL</td><td class='num' data-sort='0.0'>0.0%</td><td class='num' data-sort='18.8'>18.8%</td><td class='num' data-sort='0.00'>0.00</td><td>0.12 (0.01–2.34)</td><td class='num' data-col='p' data-sort='0.159450'>0.1595</td></tr>
+<tr><td>1. Âge ≥ 65 ans</td><td class='num' data-sort='0.0'>0.0%</td><td class='num' data-sort='17.1'>17.1%</td><td class='num' data-sort='0.00'>0.00</td><td>0.17 (0.01–3.20)</td><td class='num' data-col='p' data-sort='0.170749'>0.1707</td></tr>
+</tbody></table>
+<h2>Pneumopathie <span class='muted'>(n = 11 significatifs)</span></h2>
+<table id='t3' data-asc='1'>
+<colgroup><col style='width:40%'><col style='width:12%'><col style='width:12%'><col style='width:10%'><col style='width:18%'><col style='width:8%'></colgroup>
+<thead><tr>
+<th onclick='sortTable("t3",0)'>Facteur</th>
+<th class='num' onclick='sortTable("t3",1)'>Risque exposé</th>
+<th class='num' onclick='sortTable("t3",2)'>Risque non exposé</th>
+<th class='num' onclick='sortTable("t3",3)'>RR</th>
+<th onclick='sortTable("t3",4)'>OR (IC 95%)</th>
+<th class='num' onclick='sortTable("t3",5)'>p-value</th>
+</tr></thead><tbody>
+<tr><td>9. *Septique</td><td class='num' data-sort='72.7'>72.7%</td><td class='num' data-sort='0.0'>0.0%</td><td class='num' data-sort=''>-</td><td>182.14 (8.58–3866.66)</td><td class='num' data-col='p' data-sort='0.000000'>0.0000</td></tr>
+<tr><td>9. *Infection pulmonaire: Infection (PNP)</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='7.0'>7.0%</td><td class='num' data-sort='14.33'>14.33</td><td>127.29 (5.77–2809.17)</td><td class='num' data-col='p' data-sort='0.000033'>0.0000</td></tr>
+<tr><td>8. Pertes sanguines < 500 mL</td><td class='num' data-sort='43.8'>43.8%</td><td class='num' data-sort='3.1'>3.1%</td><td class='num' data-sort='14.00'>14.00</td><td>24.11 (2.61–222.64)</td><td class='num' data-col='p' data-sort='0.001004'>0.0010</td></tr>
+<tr><td>8. Durée opératoire ≥ 180 min</td><td class='num' data-sort='38.9'>38.9%</td><td class='num' data-sort='3.3'>3.3%</td><td class='num' data-sort='11.67'>11.67</td><td>18.45 (2.03–167.77)</td><td class='num' data-col='p' data-sort='0.002646'>0.0026</td></tr>
+<tr><td>9. *Respiratoire</td><td class='num' data-sort='30.8'>30.8%</td><td class='num' data-sort='0.0'>0.0%</td><td class='num' data-sort=''>-</td><td>20.68 (1.12–382.51)</td><td class='num' data-col='p' data-sort='0.004988'>0.0050</td></tr>
+<tr><td>9. *Douleur viscérale</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='13.0'>13.0%</td><td class='num' data-sort='7.67'>7.67</td><td>31.15 (1.34–725.07)</td><td class='num' data-col='p' data-sort='0.024823'>0.0248</td></tr>
+<tr><td>9. *Neurologique</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='13.0'>13.0%</td><td class='num' data-sort='7.67'>7.67</td><td>31.15 (1.34–725.07)</td><td class='num' data-col='p' data-sort='0.024823'>0.0248</td></tr>
+<tr><td>9. *Trouble psychose/depression</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='13.0'>13.0%</td><td class='num' data-sort='7.67'>7.67</td><td>31.15 (1.34–725.07)</td><td class='num' data-col='p' data-sort='0.024823'>0.0248</td></tr>
+<tr><td>9. *Detresse respir grave (SDRAA)</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='13.0'>13.0%</td><td class='num' data-sort='7.67'>7.67</td><td>31.15 (1.34–725.07)</td><td class='num' data-col='p' data-sort='0.024823'>0.0248</td></tr>
+<tr><td>9. *Infection pulmonaire: Infection (PAVM)</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='13.0'>13.0%</td><td class='num' data-sort='7.67'>7.67</td><td>31.15 (1.34–725.07)</td><td class='num' data-col='p' data-sort='0.024823'>0.0248</td></tr>
+<tr><td>10. **Total reprise</td><td class='num' data-sort='60.0'>60.0%</td><td class='num' data-sort='11.6'>11.6%</td><td class='num' data-sort='5.16'>5.16</td><td>11.40 (1.52–85.73)</td><td class='num' data-col='p' data-sort='0.027177'>0.0272</td></tr>
+<tr><td>9. *Hémotpysie</td><td class='num' data-sort='66.7'>66.7%</td><td class='num' data-sort='13.3'>13.3%</td><td class='num' data-sort='5.00'>5.00</td><td>13.00 (1.02–166.45)</td><td class='num' data-col='p' data-sort='0.067993'>0.0680</td></tr>
+<tr><td>5. Embolisation ≥ 2</td><td class='num' data-sort='42.9'>42.9%</td><td class='num' data-sort='12.2'>12.2%</td><td class='num' data-sort='3.51'>3.51</td><td>5.40 (0.92–31.55)</td><td class='num' data-col='p' data-sort='0.079510'>0.0795</td></tr>
+<tr><td>3. Asthme</td><td class='num' data-sort='37.5'>37.5%</td><td class='num' data-sort='12.5'>12.5%</td><td class='num' data-sort='3.00'>3.00</td><td>4.20 (0.76–23.24)</td><td class='num' data-col='p' data-sort='0.116129'>0.1161</td></tr>
+<tr><td>7. Décortication</td><td class='num' data-sort='7.7'>7.7%</td><td class='num' data-sort='27.3'>27.3%</td><td class='num' data-sort='0.28'>0.28</td><td>0.22 (0.04–1.24)</td><td class='num' data-col='p' data-sort='0.119351'>0.1194</td></tr>
+</tbody></table>
+<h2>Reprise chirurgicale <span class='muted'>(n = 9 significatifs)</span></h2>
+<table id='t4' data-asc='1'>
+<colgroup><col style='width:40%'><col style='width:12%'><col style='width:12%'><col style='width:10%'><col style='width:18%'><col style='width:8%'></colgroup>
+<thead><tr>
+<th onclick='sortTable("t4",0)'>Facteur</th>
+<th class='num' onclick='sortTable("t4",1)'>Risque exposé</th>
+<th class='num' onclick='sortTable("t4",2)'>Risque non exposé</th>
+<th class='num' onclick='sortTable("t4",3)'>RR</th>
+<th onclick='sortTable("t4",4)'>OR (IC 95%)</th>
+<th class='num' onclick='sortTable("t4",5)'>p-value</th>
+</tr></thead><tbody>
+<tr><td>9. *Réanimation prolongé (>7J)</td><td class='num' data-sort='57.1'>57.1%</td><td class='num' data-sort='2.4'>2.4%</td><td class='num' data-sort='23.43'>23.43</td><td>53.33 (4.44–640.49)</td><td class='num' data-col='p' data-sort='0.000850'>0.0009</td></tr>
+<tr><td>9. *Septique</td><td class='num' data-sort='36.4'>36.4%</td><td class='num' data-sort='2.7'>2.7%</td><td class='num' data-sort='13.45'>13.45</td><td>20.57 (1.99–212.73)</td><td class='num' data-col='p' data-sort='0.007401'>0.0074</td></tr>
+<tr><td>10. **Hémothorax</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='6.5'>6.5%</td><td class='num' data-sort='15.33'>15.33</td><td>62.14 (2.47–1564.36)</td><td class='num' data-col='p' data-sort='0.008865'>0.0089</td></tr>
+<tr><td>10. **Fistule (FBP)</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='6.5'>6.5%</td><td class='num' data-sort='15.33'>15.33</td><td>62.14 (2.47–1564.36)</td><td class='num' data-col='p' data-sort='0.008865'>0.0089</td></tr>
+<tr><td>9. *Saignement thoracique intrapleural</td><td class='num' data-sort='50.0'>50.0%</td><td class='num' data-sort='4.8'>4.8%</td><td class='num' data-sort='10.50'>10.50</td><td>20.00 (2.35–169.92)</td><td class='num' data-col='p' data-sort='0.010428'>0.0104</td></tr>
+<tr><td>5. Embolisation ≥ 2</td><td class='num' data-sort='42.9'>42.9%</td><td class='num' data-sort='4.9'>4.9%</td><td class='num' data-sort='8.79'>8.79</td><td>14.62 (1.86–115.21)</td><td class='num' data-col='p' data-sort='0.017611'>0.0176</td></tr>
+<tr><td>9. *Déglobulisation</td><td class='num' data-sort='42.9'>42.9%</td><td class='num' data-sort='4.9'>4.9%</td><td class='num' data-sort='8.79'>8.79</td><td>14.62 (1.86–115.21)</td><td class='num' data-col='p' data-sort='0.017611'>0.0176</td></tr>
+<tr><td>9. *Hémotpysie</td><td class='num' data-sort='66.7'>66.7%</td><td class='num' data-sort='6.7'>6.7%</td><td class='num' data-sort='10.00'>10.00</td><td>28.00 (1.94–404.74)</td><td class='num' data-col='p' data-sort='0.025439'>0.0254</td></tr>
+<tr><td>9. *Infection pulmonaire: Total</td><td class='num' data-sort='37.5'>37.5%</td><td class='num' data-sort='5.0'>5.0%</td><td class='num' data-sort='7.50'>7.50</td><td>11.40 (1.52–85.73)</td><td class='num' data-col='p' data-sort='0.027177'>0.0272</td></tr>
+<tr><td>9. *Respiratoire</td><td class='num' data-sort='19.2'>19.2%</td><td class='num' data-sort='0.0'>0.0%</td><td class='num' data-sort=''>-</td><td>11.51 (0.60–221.01)</td><td class='num' data-col='p' data-sort='0.053795'>0.0538</td></tr>
+<tr><td>5. Embolisation curative</td><td class='num' data-sort='30.0'>30.0%</td><td class='num' data-sort='5.3'>5.3%</td><td class='num' data-sort='5.70'>5.70</td><td>7.71 (1.08–54.98)</td><td class='num' data-col='p' data-sort='0.054075'>0.0541</td></tr>
+<tr><td>8. Durée opératoire ≥ 180 min</td><td class='num' data-sort='22.2'>22.2%</td><td class='num' data-sort='3.3'>3.3%</td><td class='num' data-sort='6.67'>6.67</td><td>8.29 (0.85–81.19)</td><td class='num' data-col='p' data-sort='0.058616'>0.0586</td></tr>
+<tr><td>9. *Infection pulmonaire: Infection (PNP)</td><td class='num' data-sort='40.0'>40.0%</td><td class='num' data-sort='7.0'>7.0%</td><td class='num' data-sort='5.73'>5.73</td><td>8.89 (1.05–75.52)</td><td class='num' data-col='p' data-sort='0.077472'>0.0775</td></tr>
+<tr><td>7. Pneumonectomie</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='8.5'>8.5%</td><td class='num' data-sort='11.75'>11.75</td><td>29.00 (1.02–822.12)</td><td class='num' data-col='p' data-sort='0.104167'>0.1042</td></tr>
+<tr><td>7. Resection de côtes</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='8.5'>8.5%</td><td class='num' data-sort='11.75'>11.75</td><td>29.00 (1.02–822.12)</td><td class='num' data-col='p' data-sort='0.104167'>0.1042</td></tr>
+</tbody></table>
+<h2>Hospitalisation ≥ 7J <span class='muted'>(n = 5 significatifs)</span></h2>
+<table id='t5' data-asc='1'>
+<colgroup><col style='width:40%'><col style='width:12%'><col style='width:12%'><col style='width:10%'><col style='width:18%'><col style='width:8%'></colgroup>
+<thead><tr>
+<th onclick='sortTable("t5",0)'>Facteur</th>
+<th class='num' onclick='sortTable("t5",1)'>Risque exposé</th>
+<th class='num' onclick='sortTable("t5",2)'>Risque non exposé</th>
+<th class='num' onclick='sortTable("t5",3)'>RR</th>
+<th onclick='sortTable("t5",4)'>OR (IC 95%)</th>
+<th class='num' onclick='sortTable("t5",5)'>p-value</th>
+</tr></thead><tbody>
+<tr><td>9. *Respiratoire</td><td class='num' data-sort='73.1'>73.1%</td><td class='num' data-sort='27.3'>27.3%</td><td class='num' data-sort='2.68'>2.68</td><td>7.24 (2.02–25.96)</td><td class='num' data-col='p' data-sort='0.003294'>0.0033</td></tr>
+<tr><td>9. *Fuite prolongé (>5J)</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='45.2'>45.2%</td><td class='num' data-sort='2.21'>2.21</td><td>15.67 (0.83–295.90)</td><td class='num' data-col='p' data-sort='0.022658'>0.0227</td></tr>
+<tr><td>9. *Pneumothorax</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='45.2'>45.2%</td><td class='num' data-sort='2.21'>2.21</td><td>15.67 (0.83–295.90)</td><td class='num' data-col='p' data-sort='0.022658'>0.0227</td></tr>
+<tr><td>9. *Septique</td><td class='num' data-sort='81.8'>81.8%</td><td class='num' data-sort='43.2'>43.2%</td><td class='num' data-sort='1.89'>1.89</td><td>5.91 (1.12–31.20)</td><td class='num' data-col='p' data-sort='0.038576'>0.0386</td></tr>
+<tr><td>6. VEMS ≥ 80 %</td><td class='num' data-sort='34.8'>34.8%</td><td class='num' data-sort='68.0'>68.0%</td><td class='num' data-sort='0.51'>0.51</td><td>0.25 (0.08–0.83)</td><td class='num' data-col='p' data-sort='0.041858'>0.0419</td></tr>
+<tr><td>10. **Total reprise</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='46.5'>46.5%</td><td class='num' data-sort='2.15'>2.15</td><td>12.61 (0.66–242.15)</td><td class='num' data-col='p' data-sort='0.050680'>0.0507</td></tr>
+<tr><td>6. DLCO ≥ 70 %</td><td class='num' data-sort='28.6'>28.6%</td><td class='num' data-sort='61.8'>61.8%</td><td class='num' data-sort='0.46'>0.46</td><td>0.25 (0.06–0.96)</td><td class='num' data-col='p' data-sort='0.056707'>0.0567</td></tr>
+<tr><td>5. Embolisation curative</td><td class='num' data-sort='80.0'>80.0%</td><td class='num' data-sort='44.7'>44.7%</td><td class='num' data-sort='1.79'>1.79</td><td>4.94 (0.92–26.41)</td><td class='num' data-col='p' data-sort='0.075307'>0.0753</td></tr>
+<tr><td>6. CPT ≥ 80 %</td><td class='num' data-sort='41.4'>41.4%</td><td class='num' data-sort='68.4'>68.4%</td><td class='num' data-sort='0.60'>0.60</td><td>0.33 (0.10–1.10)</td><td class='num' data-col='p' data-sort='0.083229'>0.0832</td></tr>
+<tr><td>3. Syndrome cavitaire</td><td class='num' data-sort='57.1'>57.1%</td><td class='num' data-sort='16.7'>16.7%</td><td class='num' data-sort='3.43'>3.43</td><td>6.67 (0.72–62.15)</td><td class='num' data-col='p' data-sort='0.091209'>0.0912</td></tr>
+<tr><td>7. Lobectomie</td><td class='num' data-sort='65.2'>65.2%</td><td class='num' data-sort='40.0'>40.0%</td><td class='num' data-sort='1.63'>1.63</td><td>2.81 (0.87–9.09)</td><td class='num' data-col='p' data-sort='0.093629'>0.0936</td></tr>
+<tr><td>5. Embolisation ≥ 2</td><td class='num' data-sort='85.7'>85.7%</td><td class='num' data-sort='46.3'>46.3%</td><td class='num' data-sort='1.85'>1.85</td><td>6.95 (0.77–62.97)</td><td class='num' data-col='p' data-sort='0.099456'>0.0995</td></tr>
+<tr><td>9. *Déglobulisation</td><td class='num' data-sort='85.7'>85.7%</td><td class='num' data-sort='46.3'>46.3%</td><td class='num' data-sort='1.85'>1.85</td><td>6.95 (0.77–62.97)</td><td class='num' data-col='p' data-sort='0.099456'>0.0995</td></tr>
+<tr><td>6. VO2pic ≥ médiane (17.4)</td><td class='num' data-sort='0.0'>0.0%</td><td class='num' data-sort='55.6'>55.6%</td><td class='num' data-sort='0.00'>0.00</td><td>0.11 (0.01–2.35)</td><td class='num' data-col='p' data-sort='0.102394'>0.1024</td></tr>
+<tr><td>7. Segmentectomie</td><td class='num' data-sort='35.3'>35.3%</td><td class='num' data-sort='61.3'>61.3%</td><td class='num' data-sort='0.58'>0.58</td><td>0.34 (0.10–1.18)</td><td class='num' data-col='p' data-sort='0.131372'>0.1314</td></tr>
+</tbody></table>
+<h2>Rehospitalisation ≤ 60J <span class='muted'>(n = 5 significatifs)</span></h2>
+<table id='t6' data-asc='1'>
+<colgroup><col style='width:40%'><col style='width:12%'><col style='width:12%'><col style='width:10%'><col style='width:18%'><col style='width:8%'></colgroup>
+<thead><tr>
+<th onclick='sortTable("t6",0)'>Facteur</th>
+<th class='num' onclick='sortTable("t6",1)'>Risque exposé</th>
+<th class='num' onclick='sortTable("t6",2)'>Risque non exposé</th>
+<th class='num' onclick='sortTable("t6",3)'>RR</th>
+<th onclick='sortTable("t6",4)'>OR (IC 95%)</th>
+<th class='num' onclick='sortTable("t6",5)'>p-value</th>
+</tr></thead><tbody>
+<tr><td>7. Pneumonectomie</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='2.1'>2.1%</td><td class='num' data-sort='47.00'>47.00</td><td>93.00 (2.57–3369.70)</td><td class='num' data-col='p' data-sort='0.041667'>0.0417</td></tr>
+<tr><td>7. Resection de côtes</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='2.1'>2.1%</td><td class='num' data-sort='47.00'>47.00</td><td>93.00 (2.57–3369.70)</td><td class='num' data-col='p' data-sort='0.041667'>0.0417</td></tr>
+<tr><td>9. *Epanchement péricardiqe</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='2.1'>2.1%</td><td class='num' data-sort='47.00'>47.00</td><td>93.00 (2.57–3369.70)</td><td class='num' data-col='p' data-sort='0.041667'>0.0417</td></tr>
+<tr><td>10. **Tamponnade</td><td class='num' data-sort='100.0'>100.0%</td><td class='num' data-sort='2.1'>2.1%</td><td class='num' data-sort='47.00'>47.00</td><td>93.00 (2.57–3369.70)</td><td class='num' data-col='p' data-sort='0.041667'>0.0417</td></tr>
+<tr><td>9. *Septique</td><td class='num' data-sort='18.2'>18.2%</td><td class='num' data-sort='0.0'>0.0%</td><td class='num' data-sort=''>-</td><td>19.74 (0.87–446.41)</td><td class='num' data-col='p' data-sort='0.048759'>0.0488</td></tr>
+<tr><td>9. *Infection pleural: Infection</td><td class='num' data-sort='50.0'>50.0%</td><td class='num' data-sort='2.2'>2.2%</td><td class='num' data-sort='23.00'>23.00</td><td>45.00 (1.49–1358.36)</td><td class='num' data-col='p' data-sort='0.082447'>0.0824</td></tr>
+<tr><td>5. Hémoptysie faible abondance</td><td class='num' data-sort='13.3'>13.3%</td><td class='num' data-sort='0.0'>0.0%</td><td class='num' data-sort=''>-</td><td>12.41 (0.56–275.82)</td><td class='num' data-col='p' data-sort='0.093085'>0.0931</td></tr>
+<tr><td>8. Pertes sanguines ≥ 500 mL</td><td class='num' data-sort='33.3'>33.3%</td><td class='num' data-sort='2.2'>2.2%</td><td class='num' data-sort='15.00'>15.00</td><td>22.00 (0.98–494.79)</td><td class='num' data-col='p' data-sort='0.122340'>0.1223</td></tr>
+<tr><td>9. *Hémotpysie</td><td class='num' data-sort='33.3'>33.3%</td><td class='num' data-sort='2.2'>2.2%</td><td class='num' data-sort='15.00'>15.00</td><td>22.00 (0.98–494.79)</td><td class='num' data-col='p' data-sort='0.122340'>0.1223</td></tr>
+<tr><td>9. *Infection pleural: Total</td><td class='num' data-sort='33.3'>33.3%</td><td class='num' data-sort='2.2'>2.2%</td><td class='num' data-sort='15.00'>15.00</td><td>22.00 (0.98–494.79)</td><td class='num' data-col='p' data-sort='0.122340'>0.1223</td></tr>
+<tr><td>8. Durée opératoire ≥ 180 min</td><td class='num' data-sort='11.1'>11.1%</td><td class='num' data-sort='0.0'>0.0%</td><td class='num' data-sort=''>-</td><td>9.24 (0.42–204.13)</td><td class='num' data-col='p' data-sort='0.135638'>0.1356</td></tr>
+<tr><td>6. CPT ≥ 80 %</td><td class='num' data-sort='0.0'>0.0%</td><td class='num' data-sort='10.5'>10.5%</td><td class='num' data-sort='0.00'>0.00</td><td>0.12 (0.01–2.62)</td><td class='num' data-col='p' data-sort='0.151596'>0.1516</td></tr>
+<tr><td>7. Changement de stratégie</td><td class='num' data-sort='25.0'>25.0%</td><td class='num' data-sort='2.3'>2.3%</td><td class='num' data-sort='11.00'>11.00</td><td>14.33 (0.71–290.45)</td><td class='num' data-col='p' data-sort='0.161348'>0.1613</td></tr>
+<tr><td>7. Conversion</td><td class='num' data-sort='25.0'>25.0%</td><td class='num' data-sort='2.3'>2.3%</td><td class='num' data-sort='11.00'>11.00</td><td>14.33 (0.71–290.45)</td><td class='num' data-col='p' data-sort='0.161348'>0.1613</td></tr>
+<tr><td>3. VHB</td><td class='num' data-sort='20.0'>20.0%</td><td class='num' data-sort='2.3'>2.3%</td><td class='num' data-sort='8.60'>8.60</td><td>10.50 (0.55–201.72)</td><td class='num' data-col='p' data-sort='0.199468'>0.1995</td></tr>
+</tbody></table>
+<div class='note'>Colonnes alignées : largeurs figées par <code>&lt;colgroup&gt;</code> et nombres en police tabulaire. Vous pouvez trier en cliquant les en-têtes et filtrer via la barre de recherche.</div>
+
+    <script>
+    function sortTable(tid, col) {
+      const table = document.getElementById(tid);
+      const tbody = table.tBodies[0];
+      const rows = Array.from(tbody.querySelectorAll('tr'));
+      const asc = table.getAttribute('data-asc') === '1' ? false : true;
+      rows.sort((r1, r2) => {
+        const c1 = r1.children[col];
+        const c2 = r2.children[col];
+        const t1 = c1.dataset.sort ?? c1.innerText;
+        const t2 = c2.dataset.sort ?? c2.innerText;
+        const v1 = parseFloat((t1||'').replace(',', '.'));
+        const v2 = parseFloat((t2||'').replace(',', '.'));
+        if (!isNaN(v1) && !isNaN(v2)) { return asc ? v1 - v2 : v2 - v1; }
+        return asc ? (t1>t2?1:-1) : (t1<t2?1:-1);
+      });
+      rows.forEach(r => tbody.appendChild(r));
+      table.setAttribute('data-asc', asc ? '1':'0');
+    }
+    function filterTables() {
+      const q = document.getElementById('q').value.toLowerCase();
+      document.querySelectorAll('tbody tr').forEach(tr => {
+          const txt = tr.innerText.toLowerCase();
+          tr.style.display = txt.includes(q) ? '' : 'none';
+      });
+    }
+    function toggleSig(cbId) {
+      const cb = document.getElementById(cbId);
+      const active = cb.checked;
+      document.querySelectorAll('tbody tr').forEach(tr => {
+        if (active) {
+          const cell = tr.querySelector('[data-col="p"]');
+          if (!cell) return;
+          const pv = parseFloat(cell.dataset.sort);
+          tr.style.display = (!isNaN(pv) && pv < 0.05) ? '' : 'none';
+          if (!isNaN(pv) && pv < 0.05) tr.classList.add('sig'); else tr.classList.remove('sig');
+        } else {
+          tr.style.display = '';
+          tr.classList.remove('sig');
+        }
+      });
+    }
+    </script>
+    
+</body></html>
